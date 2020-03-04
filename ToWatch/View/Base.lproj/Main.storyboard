@@ -83,8 +83,18 @@
                         <viewLayoutGuide key="safeArea" id="KH5-gT-esV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Completed Show" id="r42-Bq-S4G">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="Lhy-s6-79i"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="Lhy-s6-79i">
+                            <connections>
+                                <action selector="buttonEdit:" destination="PSM-dc-VH9" id="hBI-2x-Snn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="BZC-w0-2pM" id="ijJ-hJ-zqZ"/>
+                        <outlet property="labelGenre" destination="eY3-HY-iH4" id="I1u-GM-UZP"/>
+                        <outlet property="labelName" destination="DgL-3w-P1p" id="eNl-za-vIv"/>
+                        <outlet property="labelScore" destination="rPL-Ry-pZj" id="V5t-z6-Kbs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDW-vf-4wC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,6 +204,9 @@
                                 <state key="normal" title="Escolher Imagem">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonGetImage:" destination="QKT-5i-tsk" eventType="touchUpInside" id="sUw-JQ-cBs"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xyB-qW-4Tb">
                                 <rect key="frame" x="47" y="615" width="320" height="32"/>
@@ -214,6 +227,13 @@
                         <viewLayoutGuide key="safeArea" id="cJj-5d-gvf"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Show" id="Woq-Ah-sG9"/>
+                    <connections>
+                        <outlet property="imageView" destination="DXJ-Og-lYZ" id="NZU-Sv-BbV"/>
+                        <outlet property="segmentedCoontrol" destination="xyB-qW-4Tb" id="vys-Kx-4zx"/>
+                        <outlet property="textFieldGenre" destination="lc9-br-Qn7" id="DsO-rc-wuy"/>
+                        <outlet property="textFieldName" destination="c0D-VQ-BFn" id="vjf-p9-kY8"/>
+                        <outlet property="textFieldScore" destination="4qa-Hl-eCv" id="VtR-3u-KsK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Me-HU-xoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,8 +277,18 @@
                         <viewLayoutGuide key="safeArea" id="UB6-sZ-Z9g"/>
                     </view>
                     <navigationItem key="navigationItem" title="Current Show" id="rgS-Aj-s7m">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ERc-4g-Tov"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ERc-4g-Tov">
+                            <connections>
+                                <action selector="buttonEdit:" destination="dFj-gT-ejj" id="GpX-Rw-g1i"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="GPz-zc-WhJ" id="xhX-g1-guL"/>
+                        <outlet property="labelGenre" destination="Lm6-j8-adV" id="dw1-As-CPx"/>
+                        <outlet property="labelName" destination="aSY-dw-gTV" id="upE-mr-TSf"/>
+                        <outlet property="labelProgress" destination="mNp-SX-PSN" id="TO3-ci-7rz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIi-4s-vhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,6 +319,6 @@
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DGA-f6-av9"/>
+        <segue reference="dRn-zv-dHD"/>
     </inferredMetricsTieBreakers>
 </document>

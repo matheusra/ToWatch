@@ -9,6 +9,17 @@
 import UIKit
 
 class CompleteDetailsViewController: UIViewController {
+    
+    //MARK: - Outlets
+    
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelGenre: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var labelScore: UILabel!
+    
+    //MARK: - Varaibles
+    
+    //MARK: - View LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +27,11 @@ class CompleteDetailsViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = true
     }
     
+    //MARK: - Methods
+    
+    //MARK: - Actions
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonEdit(_ sender: Any) {
     }
-    */
-
+    
 }
